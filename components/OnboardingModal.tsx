@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -97,7 +98,7 @@ const OnboardingModal: React.FC<OnboardingModalProps> = ({ onClose }) => {
         <footer className="w-full flex items-center justify-center mt-auto flex-shrink-0 pb-4">
             <button
                 onClick={onClose}
-                className="w-full max-w-xs py-3 bg-gradient-to-r from-pink-600 to-fuchsia-600 text-white font-poppins font-bold text-lg uppercase rounded-full transition-all hover:brightness-110 active:scale-95 shadow-lg shadow-black/30"
+                className="w-full max-w-xs py-3 min-h-[3.5rem] h-auto bg-gradient-to-r from-pink-600 to-fuchsia-600 text-white font-poppins font-bold text-lg uppercase rounded-full transition-all hover:brightness-110 active:scale-95 shadow-lg shadow-black/30 whitespace-normal break-words leading-tight px-4 flex items-center justify-center"
                 aria-label={t('closeWelcomeGuide')}
                 >
                 {t('iUnderstand')}

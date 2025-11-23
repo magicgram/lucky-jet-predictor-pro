@@ -1,3 +1,4 @@
+
 import React, { useState, useCallback } from 'react';
 import { verifyUser, VerificationResponse } from '../services/authService';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -39,7 +40,7 @@ const DepositMessage: React.FC<{
         <button
           onClick={onRegister}
           disabled={isRegistering}
-          className="w-full py-3 bg-gradient-to-r from-[#d838c3] to-[#a63ee8] text-white font-poppins font-bold text-lg uppercase rounded-xl transition-all hover:brightness-110 active:scale-95 disabled:opacity-50 shadow-lg shadow-black/30"
+          className="w-full py-3 min-h-[3.5rem] h-auto bg-gradient-to-r from-[#d838c3] to-[#a63ee8] text-white font-poppins font-bold text-lg uppercase rounded-xl transition-all hover:brightness-110 active:scale-95 disabled:opacity-50 shadow-lg shadow-black/30 whitespace-normal break-words leading-tight px-4 flex items-center justify-center"
         >
           {isRegistering ? (
             <div className="flex justify-center items-center">
@@ -55,7 +56,7 @@ const DepositMessage: React.FC<{
         </button>
         <button
           onClick={onBack}
-          className="w-full py-3 bg-white/5 border-2 border-white/50 text-white font-poppins font-bold text-lg uppercase rounded-xl transition-colors hover:bg-white/10"
+          className="w-full py-3 min-h-[3.5rem] h-auto bg-white/5 border-2 border-white/50 text-white font-poppins font-bold text-lg uppercase rounded-xl transition-colors hover:bg-white/10 whitespace-normal break-words leading-tight px-4 flex items-center justify-center"
         >
           {t('back').toUpperCase()}
         </button>
@@ -87,7 +88,7 @@ const ReDepositMessage: React.FC<{
         <button
           onClick={onRegister}
           disabled={isRegistering}
-          className="w-full py-3 bg-gradient-to-r from-[#d838c3] to-[#a63ee8] text-white font-poppins font-bold text-lg uppercase rounded-xl transition-all hover:brightness-110 active:scale-95 disabled:opacity-50 shadow-lg shadow-black/30"
+          className="w-full py-3 min-h-[3.5rem] h-auto bg-gradient-to-r from-[#d838c3] to-[#a63ee8] text-white font-poppins font-bold text-lg uppercase rounded-xl transition-all hover:brightness-110 active:scale-95 disabled:opacity-50 shadow-lg shadow-black/30 whitespace-normal break-words leading-tight px-4 flex items-center justify-center"
         >
           {isRegistering ? (
             <div className="flex justify-center items-center">
@@ -103,7 +104,7 @@ const ReDepositMessage: React.FC<{
         </button>
         <button
           onClick={onBack}
-          className="w-full py-3 bg-white/5 border-2 border-white/50 text-white font-poppins font-bold text-lg uppercase rounded-xl transition-colors hover:bg-white/10"
+          className="w-full py-3 min-h-[3.5rem] h-auto bg-white/5 border-2 border-white/50 text-white font-poppins font-bold text-lg uppercase rounded-xl transition-colors hover:bg-white/10 whitespace-normal break-words leading-tight px-4 flex items-center justify-center"
         >
           {t('back').toUpperCase()}
         </button>
@@ -291,7 +292,7 @@ const LoginScreen: React.FC<LoginScreenProps> = ({
                 <button
                     onClick={handleContinue}
                     disabled={isLoading || !playerId}
-                    className="w-full py-3 bg-gradient-to-r from-[#d838c3] to-[#a63ee8] text-white font-poppins font-bold text-lg uppercase rounded-xl transition-all hover:brightness-110 active:scale-95 disabled:opacity-50 shadow-lg shadow-black/30"
+                    className="w-full py-3 min-h-[3.5rem] h-auto bg-gradient-to-r from-[#d838c3] to-[#a63ee8] text-white font-poppins font-bold text-lg uppercase rounded-xl transition-all hover:brightness-110 active:scale-95 disabled:opacity-50 shadow-lg shadow-black/30 whitespace-normal break-words leading-tight px-4 flex items-center justify-center"
                 >
                     {isLoading ? (
                         <div className="flex justify-center items-center h-[28px]">
@@ -312,7 +313,7 @@ const LoginScreen: React.FC<LoginScreenProps> = ({
               <button
                   onClick={handleRegister}
                   disabled={isRegistering}
-                  className="w-full py-3 bg-white/5 border-2 border-white/50 text-white font-poppins font-bold text-lg uppercase rounded-xl transition-all hover:bg-white/10 disabled:opacity-50"
+                  className="w-full py-3 min-h-[3.5rem] h-auto bg-white/5 border-2 border-white/50 text-white font-poppins font-bold text-lg uppercase rounded-xl transition-all hover:bg-white/10 disabled:opacity-50 whitespace-normal break-words leading-tight px-4 flex items-center justify-center"
               >
                 {isRegistering ? (
                     <div className="flex justify-center items-center h-[28px]">

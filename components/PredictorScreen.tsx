@@ -71,7 +71,7 @@ const LimitReachedView = React.memo(({ handleDepositRedirect }: { handleDepositR
               <div className="w-full mt-8">
                   <button 
                       onClick={handleDepositRedirect}
-                      className="w-full py-3 bg-gradient-to-r from-[#d838c3] to-[#a63ee8] text-white font-poppins font-bold text-lg uppercase rounded-xl transition-all hover:brightness-110 active:scale-95 shadow-lg shadow-black/30"
+                      className="w-full py-3 min-h-[3.5rem] h-auto bg-gradient-to-r from-[#d838c3] to-[#a63ee8] text-white font-poppins font-bold text-lg uppercase rounded-xl transition-all hover:brightness-110 active:scale-95 shadow-lg shadow-black/30 whitespace-normal break-words leading-tight px-4 flex items-center justify-center"
                   >
                       {t('depositNow')}
                   </button>
@@ -211,7 +211,7 @@ const PredictorView = React.memo((props: {
                              <button 
                                 onClick={buttonAction}
                                 disabled={isButtonDisabled}
-                                className="w-full py-4 bg-gradient-to-r from-[#d838c3] to-[#a63ee8] rounded-xl text-white font-bold text-xl tracking-wider uppercase transition-all duration-300 disabled:opacity-50 shadow-[0_4px_10px_rgba(0,0,0,0.3),inset_0_2px_2px_rgba(255,255,255,0.2)] hover:shadow-xl hover:brightness-110 active:scale-95"
+                                className="w-full py-4 min-h-[4rem] h-auto bg-gradient-to-r from-[#d838c3] to-[#a63ee8] rounded-xl text-white font-bold text-xl tracking-wider uppercase transition-all duration-300 disabled:opacity-50 shadow-[0_4px_10px_rgba(0,0,0,0.3),inset_0_2px_2px_rgba(255,255,255,0.2)] hover:shadow-xl hover:brightness-110 active:scale-95 whitespace-normal break-words leading-tight px-4 flex items-center justify-center"
                             >
                                 {buttonText}
                             </button>
