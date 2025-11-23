@@ -138,9 +138,11 @@ const PredictorView = React.memo((props: {
 
             <div className="relative z-10 w-full h-full flex flex-col">
                 <header className="w-full flex-shrink-0 pt-6 px-6">
-                    <h1 className="text-4xl sm:text-5xl font-extrabold text-white tracking-normal leading-tight" style={{ textShadow: '0 3px 6px rgba(0,0,0,0.4)' }}>
-                        Rocket Queen<br/>Predictor
-                    </h1>
+                    <img 
+                        src="https://i.postimg.cc/25pY2XXw/Picsart-25-11-23-17-12-51-748.png"
+                        alt="Lucky Jet Predictor"
+                        className="w-[200px] sm:w-[240px] h-auto object-contain"
+                    />
                 </header>
                 
                  <main className="flex-grow w-full flex flex-col items-center justify-end px-4 pb-10">
