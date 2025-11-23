@@ -130,6 +130,25 @@ const PredictorView = React.memo((props: {
                     z-index: 0;
                     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
                 }
+                
+                @keyframes jet-hover {
+                    0% {
+                        transform: translateY(0) scale(1);
+                        filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+                    }
+                    50% {
+                        transform: translateY(-8px) scale(1.03);
+                        filter: drop-shadow(0 15px 15px rgba(216, 56, 195, 0.4));
+                    }
+                    100% {
+                        transform: translateY(0) scale(1);
+                        filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+                    }
+                }
+                
+                .jet-animation {
+                    animation: jet-hover 3s ease-in-out infinite;
+                }
             `}</style>
             
             {/* Background elements */}
@@ -141,7 +160,7 @@ const PredictorView = React.memo((props: {
                     <img 
                         src="https://i.postimg.cc/25pY2XXw/Picsart-25-11-23-17-12-51-748.png"
                         alt="Lucky Jet Predictor"
-                        className="w-[130px] sm:w-[160px] h-auto object-contain"
+                        className="w-[130px] sm:w-[160px] h-auto object-contain jet-animation"
                     />
                 </header>
                 
