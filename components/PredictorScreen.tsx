@@ -51,7 +51,7 @@ const LimitReachedView = React.memo(({ handleDepositRedirect }: { handleDepositR
 
         <main className="flex flex-col items-center justify-center w-full max-w-sm text-center z-20">
           <div className="w-full bg-black/20 backdrop-blur-md rounded-2xl p-6 md:p-8">
-              <div className="relative w-48 h-48 mx-auto -mt-32 mb-2">
+              <div className="relative w-48 h-48 mx-auto -mt-24 mb-2">
                   <img 
                     src={imgUrl} 
                     alt="Rocket Queen" 
@@ -166,7 +166,7 @@ const PredictorView = React.memo((props: {
                 
                  <main className="flex-grow w-full flex flex-col items-center justify-end px-4 pb-10">
                     <div className="relative w-full flex-grow flex items-center justify-center">
-                        <div className="absolute bottom-1/2 translate-y-[25%] w-full max-w-[320px] z-0">
+                        <div className="absolute bottom-1/2 translate-y-[35%] w-full max-w-[320px] z-0">
                             <img 
                                 src={imgUrl} 
                                 alt="Rocket Queen" 
