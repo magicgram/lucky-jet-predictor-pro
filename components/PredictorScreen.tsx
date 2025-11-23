@@ -219,7 +219,7 @@ const PredictorView = React.memo((props: {
                     </div>
                 </main>
 
-                <footer className="w-full h-20 bg-gradient-to-t from-black/40 to-transparent flex items-center justify-between px-6 flex-shrink-0">
+                <footer className="w-full h-20 border-t border-white/10 bg-black/20 backdrop-blur-sm flex items-center justify-between px-6 flex-shrink-0">
                     <p className="text-4xl font-extrabold text-white font-sans tracking-tighter">{currentTime}</p>
                     <button onClick={props.onOpenSidebar} className="p-2 text-white" aria-label={t('openMenu')}>
                         <MenuIcon className="w-8 h-8" />
