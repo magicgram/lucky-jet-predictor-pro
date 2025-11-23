@@ -206,7 +206,7 @@ const LoginScreen: React.FC<LoginScreenProps> = ({
   const handleBackFromReDeposit = useCallback(() => setNeedsReDeposit(false), []);
 
   // Image URL for the login screen
-  const loginImgSrc = "https://i.postimg.cc/T3YfXCF3/Picsart-25-11-18-15-14-16-994.png";
+  const loginImgSrc = "https://i.postimg.cc/ZKXvYW3v/Picsart-25-11-22-15-45-21-035.png";
 
   return (
     <div 
