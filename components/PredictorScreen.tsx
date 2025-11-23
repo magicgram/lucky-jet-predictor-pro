@@ -137,7 +137,7 @@ const PredictorView = React.memo((props: {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] bg-pink-500/10 rounded-full blur-3xl z-0"></div>
 
             <div className="relative z-10 w-full h-full flex flex-col">
-                <header className="w-full flex-shrink-0 pt-3 pl-3 flex justify-start">
+                <header className="w-full flex-shrink-0 pt-1 pl-1 flex justify-start">
                     <img 
                         src="https://i.postimg.cc/25pY2XXw/Picsart-25-11-23-17-12-51-748.png"
                         alt="Lucky Jet Predictor"
