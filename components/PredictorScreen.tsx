@@ -24,7 +24,7 @@ const MenuIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
 
 const LimitReachedView = React.memo(({ handleDepositRedirect }: { handleDepositRedirect: () => void; }) => {
   const { t } = useLanguage();
-  const imgUrl = "https://i.postimg.cc/3N7cr754/Picsart-25-11-18-12-04-40-325.png";
+  const imgUrl = "https://i.postimg.cc/VvHJS3Pd/Picsart-25-11-23-19-21-37-663.png";
 
   return (
      <div 
@@ -93,7 +93,7 @@ const PredictorView = React.memo((props: {
 }) => {
     const { t } = useLanguage();
     const [currentTime, setCurrentTime] = useState('');
-    const imgUrl = "https://i.postimg.cc/3N7cr754/Picsart-25-11-18-12-04-40-325.png";
+    const imgUrl = "https://i.postimg.cc/VvHJS3Pd/Picsart-25-11-23-19-21-37-663.png";
 
     useEffect(() => {
         const updateTime = () => {
