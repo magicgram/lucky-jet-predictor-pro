@@ -146,7 +146,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose, onNavigate, onLogout
                         </button>
                         <div>
                             <p className="font-bold text-lg text-white truncate max-w-40">{playerId ? t('welcomeUser', {playerId}) : t('welcome')}</p>
-                            <p className="text-sm text-white/80 font-poppins">Rocket Queen Predictor</p>
+                            <p className="text-sm text-white/80 font-poppins">Lucky Jet Predictor</p>
                         </div>
                     </div>
                     <button onClick={onClose} className="p-1 -mt-1 -mr-1 rounded-full text-white/70 hover:bg-white/10 hover:text-white transition-colors">
