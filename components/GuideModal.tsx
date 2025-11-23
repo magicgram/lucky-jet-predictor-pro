@@ -52,8 +52,8 @@ const GuideModal: React.FC<GuideModalProps> = ({ onClose }) => {
     };
 
   return (
-    <div className="fixed inset-0 z-50 flex flex-col animate-fade-in font-poppins text-white p-4" 
-      style={{ background: 'linear-gradient(165deg, #3d0363, #d92d98, #fd9355)' }}
+    <div className="fixed inset-0 z-50 flex flex-col animate-fade-in font-poppins text-white p-4 overflow-hidden" 
+      style={{ background: 'linear-gradient(to top, #4f0070, #2a003f)' }}
       aria-modal="true" role="dialog">
       <style>{`
         @keyframes fade-in {
@@ -63,7 +63,23 @@ const GuideModal: React.FC<GuideModalProps> = ({ onClose }) => {
         .animate-fade-in {
           animation: fade-in 0.3s ease-out forwards;
         }
+        .swoop-bg-new::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150vw;
+            height: 50vh;
+            background: linear-gradient(180deg, #4a0e67, #2a003f);
+            border-radius: 0 0 100% 100% / 0 0 120px 120px;
+            z-index: 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            pointer-events: none;
+        }
       `}</style>
+      <div className="absolute inset-0 swoop-bg-new z-0 pointer-events-none"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] bg-pink-500/10 rounded-full blur-3xl z-0 pointer-events-none"></div>
       
       <div className="relative z-10 flex-grow w-full h-full flex flex-col">
           <header className="w-full text-center pt-8 flex-shrink-0">

@@ -1,4 +1,3 @@
-
 import React, { useState, useCallback } from 'react';
 import { verifyUser, VerificationResponse } from '../services/authService';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -211,8 +210,28 @@ const LoginScreen: React.FC<LoginScreenProps> = ({
   return (
     <div 
         className="w-full min-h-screen flex flex-col items-center justify-between p-4 relative overflow-hidden font-poppins" 
-        style={{ background: 'linear-gradient(165deg, #5f187a, #d92d98)' }}
+        style={{ background: 'linear-gradient(to top, #4f0070, #2a003f)' }}
     >
+      {/* Background Elements */}
+      <style>{`
+          .swoop-bg-new::before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 150vw;
+              height: 50vh;
+              background: linear-gradient(180deg, #4a0e67, #2a003f);
+              border-radius: 0 0 100% 100% / 0 0 120px 120px;
+              z-index: 0;
+              box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+              pointer-events: none;
+          }
+      `}</style>
+      <div className="absolute inset-0 swoop-bg-new z-0 pointer-events-none"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] bg-pink-500/10 rounded-full blur-3xl z-0 pointer-events-none"></div>
+
       <div className="absolute top-6 right-4 flex items-center space-x-2 z-30">
         <button onClick={onOpenGuide} className="p-2 rounded-full bg-black/20 text-white backdrop-blur-sm transition-colors hover:bg-black/40" aria-label="Open Guide">
             <GuideIcon className="w-6 h-6" />

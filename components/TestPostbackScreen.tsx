@@ -89,15 +89,54 @@ const TestPostbackScreen: React.FC<TestPostbackScreenProps> = ({ onBack }) => {
   
   if (showGuide) {
       return (
-        <div className="w-full h-screen text-white flex flex-col p-4" style={{ background: 'linear-gradient(165deg, #3d0363, #d92d98, #fd9355)' }}>
-            <PostbackGuide onBack={() => setShowGuide(false)} />
+        <div className="w-full h-screen text-white flex flex-col p-4 relative overflow-hidden" style={{ background: 'linear-gradient(to top, #4f0070, #2a003f)' }}>
+            <style>{`
+                .swoop-bg-new::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 150vw;
+                    height: 50vh;
+                    background: linear-gradient(180deg, #4a0e67, #2a003f);
+                    border-radius: 0 0 100% 100% / 0 0 120px 120px;
+                    z-index: 0;
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+                    pointer-events: none;
+                }
+            `}</style>
+            <div className="absolute inset-0 swoop-bg-new z-0 pointer-events-none"></div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] bg-pink-500/10 rounded-full blur-3xl z-0 pointer-events-none"></div>
+            <div className="relative z-10 w-full h-full flex flex-col">
+                <PostbackGuide onBack={() => setShowGuide(false)} />
+            </div>
         </div>
       );
   }
 
   return (
-    <div className="w-full h-screen text-white flex flex-col font-poppins p-4" style={{ background: 'linear-gradient(165deg, #3d0363, #d92d98, #fd9355)' }}>
-        <header className="flex items-center flex-shrink-0 text-white z-10">
+    <div className="w-full h-screen text-white flex flex-col font-poppins p-4 relative overflow-hidden" style={{ background: 'linear-gradient(to top, #4f0070, #2a003f)' }}>
+        <style>{`
+            .swoop-bg-new::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 150vw;
+                height: 50vh;
+                background: linear-gradient(180deg, #4a0e67, #2a003f);
+                border-radius: 0 0 100% 100% / 0 0 120px 120px;
+                z-index: 0;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+                pointer-events: none;
+            }
+        `}</style>
+        <div className="absolute inset-0 swoop-bg-new z-0 pointer-events-none"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] bg-pink-500/10 rounded-full blur-3xl z-0 pointer-events-none"></div>
+
+        <header className="flex items-center flex-shrink-0 text-white z-10 relative">
             <div className="w-10">
             <button onClick={onBack} className="p-2 -ml-2 rounded-full hover:bg-white/20" aria-label={t('goBack')}>
                 <ArrowLeftIcon className="w-6 h-6" />
@@ -107,7 +146,7 @@ const TestPostbackScreen: React.FC<TestPostbackScreenProps> = ({ onBack }) => {
             <div className="w-10"></div>
         </header>
 
-        <main className="flex-grow overflow-y-auto py-4 z-10">
+        <main className="flex-grow overflow-y-auto py-4 z-10 relative">
           <div className="max-w-md mx-auto bg-black/20 backdrop-blur-md rounded-2xl p-6 shadow-lg">
             <p className="text-center text-white/80 text-sm mb-4 font-poppins">
               {t('postbackToolDescription')}

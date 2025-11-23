@@ -46,7 +46,7 @@ const App: React.FC = () => {
 
   if (isLoading) {
      return (
-        <div className="min-h-screen flex items-center justify-center font-sans" style={{ background: 'linear-gradient(to bottom, #3a0a0f, #1a0204)' }}>
+        <div className="min-h-screen flex items-center justify-center font-sans" style={{ background: 'linear-gradient(to top, #4f0070, #2a003f)' }}>
            <div className="flex flex-col items-center">
               <svg className="animate-spin h-10 w-10 text-white mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                   <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
