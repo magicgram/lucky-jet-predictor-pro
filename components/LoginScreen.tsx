@@ -302,7 +302,7 @@ const LoginScreen: React.FC<LoginScreenProps> = ({
                             </svg>
                         </div>
                     ) : (
-                       t('continue')
+                       t('continue').toUpperCase()
                     )}
                 </button>
             </div>
@@ -337,7 +337,7 @@ const LoginScreen: React.FC<LoginScreenProps> = ({
         )}
       </main>
 
-      <p className="text-white/50 text-sm font-poppins z-20 pb-2">v11.8.0</p>
+      <p className="text-white/50 text-sm font-poppins z-20 pb-2">v29.9.0</p>
     </div>
   );
 };

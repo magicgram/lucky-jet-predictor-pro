@@ -59,7 +59,7 @@ const App: React.FC = () => {
 
   return (
     <LanguageProvider>
-      <div className="min-h-screen font-sans bg-[#f0f0f0]">
+      <div className="min-h-screen font-sans" style={{ background: 'linear-gradient(to top, #4f0070, #2a003f)' }}>
         {user ? (
           <PredictorScreen 
             user={user} 

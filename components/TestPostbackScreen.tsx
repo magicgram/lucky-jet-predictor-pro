@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import * as authService from '../services/authService';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -155,7 +156,7 @@ const TestPostbackScreen: React.FC<TestPostbackScreenProps> = ({ onBack }) => {
             <div className="text-center mb-6">
                 <button
                     onClick={() => setShowGuide(true)}
-                    className="px-4 py-2 text-sm bg-pink-500/30 text-pink-200 font-semibold rounded-lg hover:bg-pink-500/50 transition-colors"
+                    className="px-4 py-2 min-h-[2.5rem] h-auto text-sm bg-pink-500/30 text-pink-200 font-semibold rounded-lg hover:bg-pink-500/50 transition-colors whitespace-normal break-words"
                 >
                     {t('viewSetupGuide')}
                 </button>
@@ -190,21 +191,21 @@ const TestPostbackScreen: React.FC<TestPostbackScreenProps> = ({ onBack }) => {
               <button
                 onClick={() => handleAction(authService.testRegistration)}
                 disabled={isLoading}
-                className="w-full py-3 bg-gradient-to-r from-pink-600 to-fuchsia-600 text-white font-poppins font-bold text-lg uppercase rounded-full transition-all hover:brightness-110 active:scale-95 disabled:opacity-50 shadow-lg shadow-black/30"
+                className="w-full py-3 min-h-[3.5rem] h-auto bg-gradient-to-r from-pink-600 to-fuchsia-600 text-white font-poppins font-bold text-lg uppercase rounded-xl transition-all hover:brightness-110 active:scale-95 disabled:opacity-50 shadow-lg shadow-black/30 whitespace-normal break-words leading-tight px-4 flex items-center justify-center"
               >
                 {t('testRegistration')}
               </button>
               <button
                 onClick={() => handleAction(authService.testFirstDeposit, 10)}
                 disabled={isLoading}
-                className="w-full py-3 bg-gradient-to-r from-pink-600 to-fuchsia-600 text-white font-poppins font-bold text-lg uppercase rounded-full transition-all hover:brightness-110 active:scale-95 disabled:opacity-50 shadow-lg shadow-black/30"
+                className="w-full py-3 min-h-[3.5rem] h-auto bg-gradient-to-r from-pink-600 to-fuchsia-600 text-white font-poppins font-bold text-lg uppercase rounded-xl transition-all hover:brightness-110 active:scale-95 disabled:opacity-50 shadow-lg shadow-black/30 whitespace-normal break-words leading-tight px-4 flex items-center justify-center"
               >
                 {t('testFirstDeposit')}
               </button>
               <button
                 onClick={() => handleAction(authService.testReDeposit, 5)}
                 disabled={isLoading}
-                className="w-full py-3 bg-gradient-to-r from-pink-600 to-fuchsia-600 text-white font-poppins font-bold text-lg uppercase rounded-full transition-all hover:brightness-110 active:scale-95 disabled:opacity-50 shadow-lg shadow-black/30"
+                className="w-full py-3 min-h-[3.5rem] h-auto bg-gradient-to-r from-pink-600 to-fuchsia-600 text-white font-poppins font-bold text-lg uppercase rounded-xl transition-all hover:brightness-110 active:scale-95 disabled:opacity-50 shadow-lg shadow-black/30 whitespace-normal break-words leading-tight px-4 flex items-center justify-center"
               >
                 {t('testReDeposit')}
               </button>
@@ -214,7 +215,7 @@ const TestPostbackScreen: React.FC<TestPostbackScreenProps> = ({ onBack }) => {
               <button
                 onClick={() => handleAction(authService.clearUserData)}
                 disabled={isLoading}
-                className="w-full py-3 bg-transparent border-2 border-white text-white font-poppins font-bold text-lg uppercase rounded-full transition-all hover:bg-white/10 active:scale-95 disabled:opacity-50"
+                className="w-full py-3 min-h-[3.5rem] h-auto bg-transparent border-2 border-white text-white font-poppins font-bold text-lg uppercase rounded-xl transition-all hover:bg-white/10 active:scale-95 disabled:opacity-50 whitespace-normal break-words leading-tight px-4 flex items-center justify-center"
               >
                 {t('clearUserData')}
               </button>
@@ -265,7 +266,7 @@ const TestPostbackScreen: React.FC<TestPostbackScreenProps> = ({ onBack }) => {
               <button
                 onClick={handleUpdatePromoCode}
                 disabled={isUpdating}
-                className="w-full py-3 bg-gradient-to-r from-pink-700 to-fuchsia-700 text-white font-poppins font-bold text-lg uppercase rounded-full transition-all hover:brightness-110 active:scale-95 disabled:opacity-50 shadow-lg shadow-black/30"
+                className="w-full py-3 min-h-[3.5rem] h-auto bg-gradient-to-r from-pink-700 to-fuchsia-700 text-white font-poppins font-bold text-lg uppercase rounded-xl transition-all hover:brightness-110 active:scale-95 disabled:opacity-50 shadow-lg shadow-black/30 whitespace-normal break-words leading-tight px-4 flex items-center justify-center"
               >
                 {isUpdating ? t('updating') : t('updatePromocodeButton')}
               </button>
